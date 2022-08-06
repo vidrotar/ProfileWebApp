@@ -4,4 +4,10 @@
 
 .link {
     text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.link--text {
+    margin-left: 6px;
 }

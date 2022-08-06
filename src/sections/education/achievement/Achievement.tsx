@@ -19,7 +19,8 @@ function Achievement(props: AchievementDetails) {
                 </Grid>
 
                 <Grid md={8} item className={"link"} >
-                    <p>{props.link.pageLink}</p>
+                    <ion-icon name="link-outline"/>
+                    <a href={props.link.pageLink} className={"link--text"}>{props.link.pageLink}</a>
                 </Grid>
             </Grid>
     );
