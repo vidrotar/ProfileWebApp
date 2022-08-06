@@ -43,6 +43,7 @@
   text-align: left;
   flex-shrink: 1;
 }
+
 h2 {
   font-size: 54px;
   font-weight: 300;
@@ -51,7 +52,13 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 300;
+  color: #211A4C;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
   color: #211A4C;
 }

@@ -1,7 +1,6 @@
-import React from 'react';
 import {Grid} from '@material-ui/core';
 import './Profile.css';
-import ProfilePicture from '../../images/profilePhoto.jpg'
+import ProfilePicture from '../../images/profilePhoto.jpg';
 
 function Profile() {
     return (

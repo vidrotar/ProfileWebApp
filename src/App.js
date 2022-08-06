@@ -1,6 +1,6 @@
 import './App.css';
-import Profile from "./sections/profile/Profile";
-import Education from "./sections/education/Education";
+import Profile from "./sections/profile/Profile.tsx";
+import Education from "./sections/education/Education.tsx";
 
 function App() {
   return (
