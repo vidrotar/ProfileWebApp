@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import ProfileSection from "./sections/profileSection/ProfileSections";
+import Profile from "./sections/profile/Profile";
+import Education from "./sections/education/Education";
 
 function App() {
   return (
     <div className="App">
-         <ProfileSection/>
+        <Profile/>
+        <Education/>
     </div>
   );
 }

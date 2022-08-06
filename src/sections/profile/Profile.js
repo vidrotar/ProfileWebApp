@@ -1,9 +1,9 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import './ProfileSection.css';
+import './Profile.css';
 import ProfilePicture from '../../images/profilePhoto.jpg'
 
-function ProfileSection() {
+function Profile() {
     return (
         <div className={'container--profile'}>
             <Grid container className={'profile-description'}>
@@ -12,7 +12,7 @@ function ProfileSection() {
                     <p className={"short--title"}>I'm a creative full stack developer</p>
                 </Grid>
 
-                <Grid md={4} item className={'about-me'}>
+                <Grid md={4} item className={'heading--2'}>
                     <h3>About me</h3>
                     <p>I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
                 </Grid>
@@ -40,4 +40,4 @@ function ProfileSection() {
     );
 }
 
-export default ProfileSection;
+export default Profile;

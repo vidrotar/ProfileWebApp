@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom css per section */
+
+.heading--2 {
+  text-align: left;
+  flex-shrink: 1;
+}
+h2 {
+  font-size: 54px;
+  font-weight: 300;
+  color: #211A4C;
+  margin: 0;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #211A4C;
+}
