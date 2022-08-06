@@ -1,0 +1,64 @@
+.container--profile {
+    /*background-color: #E2DED3;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+
+    min-width: 1200px;
+    padding: 40px 180px;
+}
+
+.short--title {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.profile-description {
+    grid-row-gap: 32px;
+    max-width: 1300px;
+    line-height: 1.4;
+}
+
+.profile--heading {
+    flex-shrink: 1;
+}
+
+.about-me {
+    text-align: left;
+    flex-shrink: 1;
+}
+
+.image {
+    height: auto;
+    max-width: 246px;
+    border-radius: 250px;
+    transform: scale(0.9);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+}
+
+.item-details {
+    text-align: left;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 54px;
+    font-weight: 300;
+    color: #211A4C;
+    margin: 0;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #211A4C;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+}
