@@ -1,0 +1,7 @@
+.skills--row {
+    justify-content: space-between;
+
+    padding-right: 50px;
+    margin-bottom: 12px;
+    font-weight: 300;
+}

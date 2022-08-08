@@ -1,4 +1,4 @@
-import {Grid} from '@material-ui/core';
+import {Grid, Link} from '@material-ui/core';
 import {AchievementDetails} from "../Education";
 import "./Achievement.css";
 
@@ -20,7 +20,7 @@ function Achievement(props: AchievementDetails) {
 
                 <Grid md={8} item className={"link"} >
                     <ion-icon name="link-outline"/>
-                    <a href={props.link.pageLink} className={"link--text"}>{props.link.pageLink}</a>
+                    <Link underline="hover" href={props.link.pageLink}>{props.link.pageLink}</Link>
                 </Grid>
             </Grid>
     );
