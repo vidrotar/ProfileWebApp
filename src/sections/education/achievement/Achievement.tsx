@@ -3,6 +3,8 @@ import {AchievementDetails} from "../Education";
 import "./Achievement.css";
 
 function Achievement(props: AchievementDetails) {
+    console.log(props);
+
     return (
             <Grid container className={'education--description'}>
                 <Grid md={4} item className={'achievement--heading'}>
@@ -12,6 +14,11 @@ function Achievement(props: AchievementDetails) {
 
                 <Grid md={8} item className={'heading--2'}>
                     <h4>{props.institutionTitle}</h4>
+                    {
+                        props.finishPiece && (
+                            <p className={"short--title"}>{props.finishPiece}</p>
+                        )
+                    }
                     <p className={"short--title"}>{props.courseDescription}</p>
                 </Grid>
 
