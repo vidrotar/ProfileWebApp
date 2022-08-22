@@ -6,7 +6,7 @@ function Languages() {
             <Grid md={12} item className={"heading--2"}>
                 <h3>Languages</h3>
             </Grid>
-            <Grid direction={"column"} md={6} className={"skills--column"} item>
+            <Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Language</Grid>
                     <Grid item>Level</Grid>

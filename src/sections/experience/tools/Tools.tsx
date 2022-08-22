@@ -53,10 +53,10 @@ const secondaryTools: AbilityRowInfo[] = [intellIj, WebStorm, PhpStorm];
 function Tools() {
     return(
         <>
-            <Grid md={12} item className={"heading--2"}>
+            <Grid md={12} xs={12} item className={"heading--2"}>
                 <h3>Tools</h3>
             </Grid>
-            <Grid direction={"column"} md={6} className={"skills--column"} item>
+            <Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Tool</Grid>
                     <Grid item>Experience (Years)</Grid>
@@ -67,7 +67,7 @@ function Tools() {
                     })
                 }
             </Grid>
-            <Grid md={6} item>
+            <Grid md={6} xs={12} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Tool</Grid>
                     <Grid item>Experience (Years)</Grid>

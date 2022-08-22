@@ -84,12 +84,12 @@ function Education() {
     return (
         <div className={'container--education'}>
             <Grid container className={'education--description'}>
-                <Grid md={12} item>
+                <Grid md={12} xs={12} item>
                     <h2>Experience</h2>
                     <p className={"short--title"}>Masters degree</p>
                 </Grid>
 
-                <Grid md={12} item className={'heading--2'}>
+                <Grid md={12} xs={12} item className={'heading--2'}>
                     <h3>Education</h3>
                 </Grid>
                 {
@@ -97,7 +97,7 @@ function Education() {
                         <Achievement institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} finishPiece={e.finishPiece} courseDescription={e.courseDescription} link={e.link} />
                     )
                 }
-                <Grid md={12} item className={'heading--2'}>
+                <Grid md={12} xs={12} item className={'heading--2'}>
                     <h3>Career</h3>
                 </Grid>
                 {

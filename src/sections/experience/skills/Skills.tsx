@@ -50,10 +50,10 @@ const developingKnowledge: AbilityRowInfo[] = [springBoot];
 function Skills() {
     return(
         <>
-            <Grid md={12} item className={"heading--2"}>
+            <Grid md={12} xs={12} item className={"heading--2"}>
                 <h3>Skills</h3>
             </Grid>
-            <Grid direction={"column"} md={6} className={"skills--column"} item>
+            <Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Language</Grid>
                     <Grid item>Experience (Years)</Grid>
@@ -64,7 +64,7 @@ function Skills() {
                     })
                 }
             </Grid>
-            <Grid md={6} item>
+            <Grid md={6} xs={12} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Backend</Grid>
                     <Grid item>Experience (Years)</Grid>
@@ -75,7 +75,7 @@ function Skills() {
                     })
                 }
             </Grid>
-            <Grid direction={"column"} md={6} className={"skills--column"} item>
+            <Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Frontend</Grid>
                     <Grid item>Experience (Years)</Grid>
@@ -86,7 +86,7 @@ function Skills() {
                     })
                 }
             </Grid>
-            <Grid md={6} item>
+            <Grid md={6} xs={12} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Developing knowledge</Grid>
                     <Grid item>Experience (Years)</Grid>
