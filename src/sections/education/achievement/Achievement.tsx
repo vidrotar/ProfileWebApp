@@ -6,7 +6,7 @@ function Achievement(props: AchievementDetails) {
     console.log(props);
 
     return (
-            <Grid container className={'education--description'}>
+            <Grid container className={'contact--description'}>
                 <Grid md={4} item className={'achievement--heading'}>
                     <h4>{props.course}</h4>
                     <p>{props.timeline}</p>

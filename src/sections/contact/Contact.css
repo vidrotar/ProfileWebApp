@@ -14,10 +14,22 @@
     line-height: 1.4;
 }
 
-.education--description {
+.contact--description {
     max-width: 1100px;
     line-height: 1.4;
     margin-bottom: 32px;
+}
+
+.contact--details {
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact--item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .image {

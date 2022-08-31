@@ -60,7 +60,7 @@ var result = {
 var fullEducation = [elementarySchool, highSchool, fri, businessInformatics];
 var careers = [beenius, result];
 function Education() {
-    return (<div className={'container--education'}>
+    return (<div className={'container--grey'}>
             <core_1.Grid container className={'education--description'}>
                 <core_1.Grid md={12} xs={12} item>
                     <h2>Experience</h2>

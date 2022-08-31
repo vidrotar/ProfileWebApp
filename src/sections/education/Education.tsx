@@ -82,7 +82,7 @@ const careers: AchievementDetails[] = [beenius, result];
 
 function Education() {
     return (
-        <div className={'container--education'}>
+        <div className={'container--grey'}>
             <Grid container className={'education--description'}>
                 <Grid md={12} xs={12} item>
                     <h2>Experience</h2>

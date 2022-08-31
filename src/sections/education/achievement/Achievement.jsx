@@ -1,10 +1,10 @@
-"use strict";
+
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@material-ui/core");
 require("./Achievement.css");
 function Achievement(props) {
     console.log(props);
-    return (<core_1.Grid container className={'education--description'}>
+    return (<core_1.Grid container className={'contact--description'}>
                 <core_1.Grid md={4} item className={'achievement--heading'}>
                     <h4>{props.course}</h4>
                     <p>{props.timeline}</p>
