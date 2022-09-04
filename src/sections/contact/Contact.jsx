@@ -18,7 +18,7 @@ function Contact() {
                     </div>
                     <div className={'contact--item'}>
                         <div><phosphor_react_1.Envelope size={32} weight="thin"/> </div>
-                        <p>vid.rotar1@gmail.com</p>
+                        <p>vidrotar@duck.com</p>
                     </div>
                 </core_1.Grid>
             </core_1.Grid>

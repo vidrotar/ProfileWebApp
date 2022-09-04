@@ -4,7 +4,11 @@ var core_1 = require("@material-ui/core");
 var AbilityRow_tsx_1 = require("../abilityRow/AbilityRow.tsx");
 var springBoot = {
     skillName: "SpringBoot",
-    yearsOfExperience: 2
+    yearsOfExperience: 3
+};
+var symfony = {
+    skillName: "Symfony",
+    yearsOfExperience: 1
 };
 var docker = {
     skillName: "Docker",
@@ -13,6 +17,18 @@ var docker = {
 var kubernetes = {
     skillName: "Kubernetes",
     yearsOfExperience: 2
+};
+var kibana = {
+    skillName: "Kibana",
+    yearsOfExperience: 3
+};
+var prometheus = {
+    skillName: "Prometheus",
+    yearsOfExperience: 1
+};
+var grafana = {
+    skillName: "Grafana",
+    yearsOfExperience: 1
 };
 var java = {
     skillName: "Java",
@@ -34,10 +50,39 @@ var htmlCss = {
     skillName: "HTML/CSS",
     yearsOfExperience: 2
 };
+var react = {
+    skillName: "React",
+    yearsOfExperience: 2
+};
+var typescript = {
+    skillName: "Typescript",
+    yearsOfExperience: 2
+};
+var jquery = {
+    skillName: "Jquery",
+    yearsOfExperience: 1
+};
+// developing knowledge
+var agile = {
+    skillName: "Agile",
+    yearsOfExperience: 4
+};
+var scrum = {
+    skillName: "Scrum",
+    yearsOfExperience: 4
+};
+var continuousIntegration = {
+    skillName: "Continuous Integration",
+    yearsOfExperience: 3
+};
+var versionControl = {
+    skillName: "Version Control",
+    yearsOfExperience: 3
+};
 var languageSkills = [java, php, javascript, htmlCss, python];
-var backendSkills = [springBoot, docker, kubernetes];
-var frontendSkills = [springBoot];
-var developingKnowledge = [springBoot];
+var backendSkills = [springBoot, docker, kubernetes, kibana, grafana, prometheus, symfony];
+var frontendSkills = [react, typescript, jquery];
+var developingKnowledge = [agile, scrum, continuousIntegration, versionControl];
 function Skills() {
     return (<>
             <core_1.Grid md={12} xs={12} item className={"heading--2"}>
@@ -66,7 +111,7 @@ function Skills() {
                     <core_1.Grid item>Frontend</core_1.Grid>
                     <core_1.Grid item>Experience (Years)</core_1.Grid>
                 </core_1.Grid>
-                {languageSkills.map(function (skill) {
+                {frontendSkills.map(function (skill) {
             return <AbilityRow_tsx_1.default skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow_tsx_1.default>;
         })}
             </core_1.Grid>
@@ -75,7 +120,7 @@ function Skills() {
                     <core_1.Grid item>Developing knowledge</core_1.Grid>
                     <core_1.Grid item>Experience (Years)</core_1.Grid>
                 </core_1.Grid>
-                {backendSkills.map(function (skill) {
+                {developingKnowledge.map(function (skill) {
             return <AbilityRow_tsx_1.default skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow_tsx_1.default>;
         })}
             </core_1.Grid>

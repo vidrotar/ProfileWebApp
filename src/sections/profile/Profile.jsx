@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@material-ui/core");
 require("./Profile.css");
-var profilePhoto_jpg_1 = require("../../images/profilePhoto.jpg");
+var updatedProfilePhoto_jpg_1 = require("../../images/updatedProfilePhoto.jpg");
 function Profile() {
     return (<div className={'container--profile'}>
             <core_1.Grid container className={'profile-description'}>
@@ -13,11 +13,11 @@ function Profile() {
 
                 <core_1.Grid md={4} item className={'heading--2'}>
                     <h3>About me</h3>
-                    <p>I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
+                    <p>I am an allround developer. I am a programmer with good knowledge of back-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more.</p>
                 </core_1.Grid>
 
                 <core_1.Grid md={4} xs={12} item>
-                    <img className={'image'} src={profilePhoto_jpg_1.default}/>
+                    <img className={'image'} src={updatedProfilePhoto_jpg_1.default}/>
                 </core_1.Grid>
 
                 <core_1.Grid md={4} xs={12} item className={'item-details'}>

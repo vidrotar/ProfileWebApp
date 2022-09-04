@@ -4,7 +4,12 @@ import {AbilityRowInfo} from "../Experience";
 
 const springBoot: AbilityRowInfo = {
     skillName: "SpringBoot",
-    yearsOfExperience: 2
+    yearsOfExperience: 3
+}
+
+const symfony: AbilityRowInfo = {
+    skillName: "Symfony",
+    yearsOfExperience: 1
 }
 
 const docker: AbilityRowInfo = {
@@ -15,6 +20,21 @@ const docker: AbilityRowInfo = {
 const kubernetes: AbilityRowInfo = {
     skillName: "Kubernetes",
     yearsOfExperience: 2
+}
+
+const kibana: AbilityRowInfo = {
+    skillName: "Kibana",
+    yearsOfExperience: 3
+}
+
+const prometheus: AbilityRowInfo = {
+    skillName: "Prometheus",
+    yearsOfExperience: 1
+}
+
+const grafana: AbilityRowInfo = {
+    skillName: "Grafana",
+    yearsOfExperience: 1
 }
 
 const java: AbilityRowInfo = {
@@ -42,10 +62,46 @@ const htmlCss: AbilityRowInfo = {
     yearsOfExperience: 2
 }
 
+const react: AbilityRowInfo = {
+    skillName: "React",
+    yearsOfExperience: 2
+}
+
+const typescript: AbilityRowInfo = {
+    skillName: "Typescript",
+    yearsOfExperience: 2
+}
+
+const jquery: AbilityRowInfo = {
+    skillName: "Jquery",
+    yearsOfExperience: 1
+}
+
+// developing knowledge
+const agile: AbilityRowInfo = {
+    skillName: "Agile",
+    yearsOfExperience: 4
+}
+
+const scrum: AbilityRowInfo = {
+    skillName: "Scrum",
+    yearsOfExperience: 4
+}
+
+const continuousIntegration: AbilityRowInfo = {
+    skillName: "Continuous Integration",
+    yearsOfExperience: 3
+}
+
+const versionControl: AbilityRowInfo = {
+    skillName: "Version Control",
+    yearsOfExperience: 3
+}
+
 const languageSkills: AbilityRowInfo[] = [java, php, javascript, htmlCss, python];
-const backendSkills: AbilityRowInfo[] = [springBoot, docker, kubernetes];
-const frontendSkills: AbilityRowInfo[] = [springBoot];
-const developingKnowledge: AbilityRowInfo[] = [springBoot];
+const backendSkills: AbilityRowInfo[] = [springBoot, docker, kubernetes, kibana, grafana, prometheus, symfony];
+const frontendSkills: AbilityRowInfo[] = [react, typescript, jquery];
+const developingKnowledge: AbilityRowInfo[] = [agile, scrum, continuousIntegration, versionControl];
 
 function Skills() {
     return(
@@ -81,7 +137,7 @@ function Skills() {
                     <Grid item>Experience (Years)</Grid>
                 </Grid>
                 {
-                    languageSkills.map((skill) => {
+                    frontendSkills.map((skill) => {
                         return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow>
                     })
                 }
@@ -92,7 +148,7 @@ function Skills() {
                     <Grid item>Experience (Years)</Grid>
                 </Grid>
                 {
-                    backendSkills.map((skill) => {
+                    developingKnowledge.map((skill) => {
                         return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow>
                     })
                 }

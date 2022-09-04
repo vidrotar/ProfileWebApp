@@ -18,7 +18,7 @@ function Contact() {
                     </div>
                     <div className={'contact--item'}>
                         <div><Envelope size={32} weight="thin" /> </div>
-                        <p>vid.rotar1@gmail.com</p>
+                        <p>vidrotar@duck.com</p>
                     </div>
                 </Grid>
             </Grid>

@@ -22,23 +22,23 @@ var Confluence = {
     skillName: "Confluence",
     yearsOfExperience: 2
 };
+var git = {
+    skillName: "Git",
+    yearsOfExperience: 4
+};
 var GitHub = {
     skillName: "GitHub",
-    yearsOfExperience: 1
+    yearsOfExperience: 3
 };
 var BitBucket = {
     skillName: "BitBucket",
-    yearsOfExperience: 2
-};
-var Grafana = {
-    skillName: "Grafana",
     yearsOfExperience: 2
 };
 var ElasticStack = {
     skillName: "Elastic stack",
     yearsOfExperience: 2
 };
-var mainTools = [Jira, BitBucket, Confluence, Grafana, GitHub];
+var mainTools = [Jira, git, BitBucket, Confluence, GitHub];
 var secondaryTools = [intellIj, WebStorm, PhpStorm];
 function Tools() {
     return (<>

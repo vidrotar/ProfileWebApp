@@ -27,18 +27,18 @@ const Confluence: AbilityRowInfo = {
     yearsOfExperience: 2
 }
 
+const git: AbilityRowInfo = {
+    skillName: "Git",
+    yearsOfExperience: 4
+}
+
 const GitHub: AbilityRowInfo = {
     skillName: "GitHub",
-    yearsOfExperience: 1
+    yearsOfExperience: 3
 }
 
 const BitBucket: AbilityRowInfo = {
     skillName: "BitBucket",
-    yearsOfExperience: 2
-}
-
-const Grafana: AbilityRowInfo = {
-    skillName: "Grafana",
     yearsOfExperience: 2
 }
 
@@ -47,7 +47,7 @@ const ElasticStack: AbilityRowInfo = {
     yearsOfExperience: 2
 }
 
-const mainTools: AbilityRowInfo[] = [Jira, BitBucket, Confluence, Grafana, GitHub];
+const mainTools: AbilityRowInfo[] = [Jira, git, BitBucket, Confluence, GitHub];
 const secondaryTools: AbilityRowInfo[] = [intellIj, WebStorm, PhpStorm];
 
 function Tools() {
