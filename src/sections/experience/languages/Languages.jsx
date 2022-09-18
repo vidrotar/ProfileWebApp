@@ -6,7 +6,7 @@ function Languages() {
             <core_1.Grid md={12} item className={"heading--2"}>
                 <h3>Languages</h3>
             </core_1.Grid>
-            <core_1.Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
+            <core_1.Grid md={6} xs={12} className={"skills--column"} item>
                 <core_1.Grid container className={"first--row"}>
                     <core_1.Grid item>Language</core_1.Grid>
                     <core_1.Grid item>Level</core_1.Grid>
@@ -20,7 +20,7 @@ function Languages() {
                     <core_1.Grid item>C1</core_1.Grid>
                 </core_1.Grid>
             </core_1.Grid>
-            <core_1.Grid md={6} item>
+            <core_1.Grid md={6} xs={12} item>
                 <core_1.Grid container className={"first--row"}>
                     <core_1.Grid item>Language</core_1.Grid>
                     <core_1.Grid item>Level</core_1.Grid>

@@ -56,14 +56,14 @@ function Tools() {
             <Grid md={12} xs={12} item className={"heading--2"}>
                 <h3>Tools</h3>
             </Grid>
-            <Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
+            <Grid md={6} xs={12} className={"skills--column"} item>
                 <Grid container className={"first--row"}>
                     <Grid item>Tool</Grid>
                     <Grid item>Experience (Years)</Grid>
                 </Grid>
                 {
-                    mainTools.map((skill) => {
-                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow>
+                    mainTools.map((skill, index) => {
+                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
                     })
                 }
             </Grid>
@@ -73,8 +73,8 @@ function Tools() {
                     <Grid item>Experience (Years)</Grid>
                 </Grid>
                 {
-                    secondaryTools.map((skill) => {
-                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow>
+                    secondaryTools.map((skill, index) => {
+                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
                     })
                 }
             </Grid>

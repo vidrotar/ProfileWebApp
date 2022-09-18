@@ -45,13 +45,13 @@ function Tools() {
             <core_1.Grid md={12} xs={12} item className={"heading--2"}>
                 <h3>Tools</h3>
             </core_1.Grid>
-            <core_1.Grid direction={"column"} md={6} xs={12} className={"skills--column"} item>
+            <core_1.Grid md={6} xs={12} className={"skills--column"} item>
                 <core_1.Grid container className={"first--row"}>
                     <core_1.Grid item>Tool</core_1.Grid>
                     <core_1.Grid item>Experience (Years)</core_1.Grid>
                 </core_1.Grid>
-                {mainTools.map(function (skill) {
-            return <AbilityRow_tsx_1.default skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow_tsx_1.default>;
+                {mainTools.map(function (skill, index) {
+            return <AbilityRow_tsx_1.default skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow_tsx_1.default>;
         })}
             </core_1.Grid>
             <core_1.Grid md={6} xs={12} item>
@@ -59,8 +59,8 @@ function Tools() {
                     <core_1.Grid item>Tool</core_1.Grid>
                     <core_1.Grid item>Experience (Years)</core_1.Grid>
                 </core_1.Grid>
-                {secondaryTools.map(function (skill) {
-            return <AbilityRow_tsx_1.default skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience}></AbilityRow_tsx_1.default>;
+                {secondaryTools.map(function (skill, index) {
+            return <AbilityRow_tsx_1.default skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow_tsx_1.default>;
         })}
             </core_1.Grid>
         </>);

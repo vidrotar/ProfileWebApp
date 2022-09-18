@@ -1,6 +1,7 @@
 import {Grid} from '@material-ui/core';
 import './Education.css';
 import Achievement from "./achievement/Achievement.tsx";
+import {Section} from "react-scroll-section";
 
 export type AchievementDetails = {
   institutionTitle: string;
@@ -82,31 +83,33 @@ const careers: AchievementDetails[] = [beenius, result];
 
 function Education() {
     return (
-        <div className={'container--grey'}>
-            <Grid container className={'education--description'}>
-                <Grid md={12} xs={12} item>
-                    <h2>Experience</h2>
-                    <p className={"short--title"}>Masters degree</p>
-                </Grid>
+        <Section id={'experience'}>
+            <div className={'container--grey'}>
+                <Grid container className={'education--description'}>
+                    <Grid md={12} xs={12} item>
+                        <h2>Experience</h2>
+                        <p className={"short--title"}>Masters degree</p>
+                    </Grid>
 
-                <Grid md={12} xs={12} item className={'heading--2'}>
-                    <h3>Education</h3>
+                    <Grid md={12} xs={12} item className={'heading--2'}>
+                        <h3>Education</h3>
+                    </Grid>
+                    {
+                        fullEducation.map( (e, index) =>
+                            <Achievement key={index} institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} finishPiece={e.finishPiece} courseDescription={e.courseDescription} link={e.link} />
+                        )
+                    }
+                    <Grid md={12} xs={12} item className={'heading--2'}>
+                        <h3>Career</h3>
+                    </Grid>
+                    {
+                        careers.map( (e, index) =>
+                            <Achievement key={index} institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} courseDescription={e.courseDescription} link={e.link} />
+                        )
+                    }
                 </Grid>
-                {
-                    fullEducation.map( (e) =>
-                        <Achievement institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} finishPiece={e.finishPiece} courseDescription={e.courseDescription} link={e.link} />
-                    )
-                }
-                <Grid md={12} xs={12} item className={'heading--2'}>
-                    <h3>Career</h3>
-                </Grid>
-                {
-                    careers.map( (e) =>
-                        <Achievement institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} courseDescription={e.courseDescription} link={e.link} />
-                    )
-                }
-            </Grid>
-        </div>
+            </div>
+        </Section>
     );
 }
 

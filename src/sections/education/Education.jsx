@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@material-ui/core");
 require("./Education.css");
 var Achievement_tsx_1 = require("./achievement/Achievement.tsx");
+var react_scroll_section_1 = require("react-scroll-section");
 var elementarySchool = {
     institutionTitle: "Elementray School Maks Pecar",
     timeline: "September 2002 - June 2010",
@@ -60,26 +61,28 @@ var result = {
 var fullEducation = [elementarySchool, highSchool, fri, businessInformatics];
 var careers = [beenius, result];
 function Education() {
-    return (<div className={'container--grey'}>
-            <core_1.Grid container className={'education--description'}>
-                <core_1.Grid md={12} xs={12} item>
-                    <h2>Experience</h2>
-                    <p className={"short--title"}>Masters degree</p>
-                </core_1.Grid>
+    return (<react_scroll_section_1.Section id={'experience'}>
+            <div className={'container--grey'}>
+                <core_1.Grid container className={'education--description'}>
+                    <core_1.Grid md={12} xs={12} item>
+                        <h2>Experience</h2>
+                        <p className={"short--title"}>Masters degree</p>
+                    </core_1.Grid>
 
-                <core_1.Grid md={12} xs={12} item className={'heading--2'}>
-                    <h3>Education</h3>
-                </core_1.Grid>
-                {fullEducation.map(function (e) {
-            return <Achievement_tsx_1.default institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} finishPiece={e.finishPiece} courseDescription={e.courseDescription} link={e.link}/>;
+                    <core_1.Grid md={12} xs={12} item className={'heading--2'}>
+                        <h3>Education</h3>
+                    </core_1.Grid>
+                    {fullEducation.map(function (e, index) {
+            return <Achievement_tsx_1.default key={index} institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} finishPiece={e.finishPiece} courseDescription={e.courseDescription} link={e.link}/>;
         })}
-                <core_1.Grid md={12} xs={12} item className={'heading--2'}>
-                    <h3>Career</h3>
-                </core_1.Grid>
-                {careers.map(function (e) {
-            return <Achievement_tsx_1.default institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} courseDescription={e.courseDescription} link={e.link}/>;
+                    <core_1.Grid md={12} xs={12} item className={'heading--2'}>
+                        <h3>Career</h3>
+                    </core_1.Grid>
+                    {careers.map(function (e, index) {
+            return <Achievement_tsx_1.default key={index} institutionTitle={e.institutionTitle} timeline={e.timeline} course={e.course} courseDescription={e.courseDescription} link={e.link}/>;
         })}
-            </core_1.Grid>
-        </div>);
+                </core_1.Grid>
+            </div>
+        </react_scroll_section_1.Section>);
 }
 exports.default = Education;

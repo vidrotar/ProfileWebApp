@@ -3,8 +3,6 @@ import {AchievementDetails} from "../Education";
 import "./Achievement.css";
 
 function Achievement(props: AchievementDetails) {
-    console.log(props);
-
     return (
             <Grid container className={'contact--description'}>
                 <Grid md={4} item className={'achievement--heading'}>
