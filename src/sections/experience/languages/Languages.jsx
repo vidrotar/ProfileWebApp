@@ -12,7 +12,7 @@ function Languages() {
                     <core_1.Grid item>Level</core_1.Grid>
                 </core_1.Grid>
                 <core_1.Grid container className={"ability--row"}>
-                    <core_1.Grid item>Slovenian</core_1.Grid>
+                    <core_1.Grid item>Slovene</core_1.Grid>
                     <core_1.Grid item>C2</core_1.Grid>
                 </core_1.Grid>
                 <core_1.Grid container className={"ability--row"}>
