@@ -1,3 +1,10 @@
+@media screen and (max-width: 1140px) {
+    .achievement--heading {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 .achievement--heading {
     text-align: left;
 }

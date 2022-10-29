@@ -1,3 +1,7 @@
+@media screen and (max-width: 1200px) {
+    .container--experience{ padding-left: 40px;}
+}
+
 .container--experience {
     display: flex;
     flex-direction: column;

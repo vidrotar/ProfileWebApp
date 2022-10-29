@@ -1,3 +1,15 @@
+@media screen and (max-width: 1140px) {
+    .contact--description{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .item-details{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 .container--grey {
     background-color: #E2DED3;
 

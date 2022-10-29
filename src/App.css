@@ -39,6 +39,13 @@
 
 /* Custom css per section */
 
+@media screen and (max-width: 1140px) {
+  .heading--2{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .heading--2 {
   text-align: left;
   flex-shrink: 1;
