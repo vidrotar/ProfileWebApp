@@ -2,6 +2,7 @@ import {Grid} from '@material-ui/core';
 import './Education.css';
 import Achievement from "./achievement/Achievement.tsx";
 import {Section} from "react-scroll-section";
+import React from 'react';
 
 export type AchievementDetails = {
   institutionTitle: string;
@@ -17,21 +18,21 @@ export type Link = {
     icon?: string;
 }
 
-const elementarySchool: AchievementDetails = {
-    institutionTitle: "Elementray School Maks Pecar",
-    timeline: "September 2002 - June 2010",
-    course: "Elementary School",
-    courseDescription: "",
-    link: {pageLink: "https://www.makspecar.si/"}
-};
+// const elementarySchool: AchievementDetails = {
+//     institutionTitle: "Elementray School Maks Pecar",
+//     timeline: "September 2002 - June 2010",
+//     course: "Elementary School",
+//     courseDescription: "",
+//     link: {pageLink: "https://www.makspecar.si/"}
+// };
 
-const highSchool: AchievementDetails = {
-    institutionTitle: "Gimnasium Vič",
-    timeline: "September 2010 - July 2014",
-    course: "High School",
-    courseDescription: "",
-    link: {pageLink: "https://www.gimvic.org/international/"}
-};
+// const highSchool: AchievementDetails = {
+//     institutionTitle: "Gimnasium Vič",
+//     timeline: "September 2010 - July 2014",
+//     course: "High School",
+//     courseDescription: "",
+//     link: {pageLink: "https://www.gimvic.org/international/"}
+// };
 
 const fri: AchievementDetails = {
     institutionTitle: "Computer Science and Engineering",
@@ -77,7 +78,7 @@ const result: AchievementDetails = {
     link: {pageLink: "https://www.result.eu/"}
 };
 
-const fullEducation: AchievementDetails[] = [elementarySchool, highSchool, fri, businessInformatics];
+const fullEducation: AchievementDetails[] = [fri, businessInformatics];
 const careers: AchievementDetails[] = [beenius, result];
 
 
