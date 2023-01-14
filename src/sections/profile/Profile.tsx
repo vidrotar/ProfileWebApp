@@ -15,7 +15,7 @@ function Profile() {
 
                     <Grid md={4} item className={'heading--2'}>
                         <h3>About me</h3>
-                        <p>I am an allround developer. I am a programmer with good knowledge of back-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more.</p>
+                        <p>I am an fullstack developer. I love structure, order and I also stand for quality. I also like working in a team.</p>
                     </Grid>
 
                     <Grid md={4} xs={12} item>
@@ -30,10 +30,6 @@ function Profile() {
                         <p>27 years</p>
                         <p><strong>Location:</strong></p>
                         <p>Slovenia</p>
-                    </Grid>
-
-                    <Grid item md={12}>
-                        Want to know more about me? Check out content below.
                     </Grid>
                 </Grid>
             </div>

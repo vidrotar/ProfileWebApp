@@ -51,8 +51,8 @@ const businessInformatics: AchievementDetails = {
     institutionTitle: "Business Informatics",
     timeline: "October 2019 - May 2022",
     course: "Faculty of Economics (University of Ljubljana)",
-    finishPiece: "Masters thesis",
-    courseDescription: "The Business Informatics programme is intended for all those who are interested in the use of information technology in companies and other organisations and are aware that this, in addition to knowledge of technology, also requires business knowledge. The emphasis is on digitalisation, business analytics, and the improvement of business processes and business models through the development of information systems.",
+    finishPiece: "Masters thesis: An analysis of the information system development method at a selected company",
+    courseDescription: "I analysed the current Scrum workflow inside a company I worked at. I found the parts of the process that were not optimized and perscribed a proper solution for each of them. The proposed solutions were then also implemented in the teams work.",
     link: {pageLink: "http://www.ef.uni-lj.si/graduate/busifno"}
 };
 
