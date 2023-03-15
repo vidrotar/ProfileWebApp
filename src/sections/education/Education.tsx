@@ -74,7 +74,7 @@ const result: AchievementDetails = {
     institutionTitle: "Result d.o.o.",
     timeline: "November 2018 - Present",
     course: "Software Engineer",
-    courseDescription: "I am developing custom software solutions for internal projects using Java frameworks. We are creating and maintaining microservices inside a big platform.",
+    courseDescription: "I am developing custom software solutions for internal projects using Java Spring Boot framework. We are creating and maintaining microservices on the AWS platform.",
     link: {pageLink: "https://www.result.eu/"}
 };
 

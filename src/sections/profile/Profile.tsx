@@ -27,7 +27,7 @@ function Profile() {
                         <p><strong>Name:</strong></p>
                         <p>Vid Rotar</p>
                         <p><strong>Age:</strong></p>
-                        <p>27 years</p>
+                        <p>28 years</p>
                         <p><strong>Location:</strong></p>
                         <p>Slovenia</p>
                     </Grid>

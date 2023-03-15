@@ -22,6 +22,11 @@ const kubernetes: AbilityRowInfo = {
     yearsOfExperience: 2
 }
 
+const kafka: AbilityRowInfo = {
+    skillName: "Kafka",
+    yearsOfExperience: 2
+}
+
 const kibana: AbilityRowInfo = {
     skillName: "Kibana",
     yearsOfExperience: 3
@@ -99,7 +104,7 @@ const versionControl: AbilityRowInfo = {
 }
 
 const languageSkills: AbilityRowInfo[] = [java, php, javascript, htmlCss, python];
-const backendSkills: AbilityRowInfo[] = [springBoot, docker, kubernetes, kibana, grafana, prometheus, symfony];
+const backendSkills: AbilityRowInfo[] = [springBoot, docker, kubernetes, kafka, kibana, grafana, prometheus, symfony];
 const frontendSkills: AbilityRowInfo[] = [react, typescript, jquery];
 const developingKnowledge: AbilityRowInfo[] = [agile, scrum, continuousIntegration, versionControl];
 
