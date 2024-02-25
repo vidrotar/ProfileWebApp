@@ -4,20 +4,21 @@ var core_1 = require("@material-ui/core");
 require("./Education.css");
 var Achievement_tsx_1 = require("./achievement/Achievement.tsx");
 var react_scroll_section_1 = require("react-scroll-section");
-var elementarySchool = {
-    institutionTitle: "Elementray School Maks Pecar",
-    timeline: "September 2002 - June 2010",
-    course: "Elementary School",
-    courseDescription: "",
-    link: { pageLink: "https://www.makspecar.si/" }
-};
-var highSchool = {
-    institutionTitle: "Gimnasium Vič",
-    timeline: "September 2010 - July 2014",
-    course: "High School",
-    courseDescription: "",
-    link: { pageLink: "https://www.gimvic.org/international/" }
-};
+var react_1 = require("react");
+// const elementarySchool: AchievementDetails = {
+//     institutionTitle: "Elementray School Maks Pecar",
+//     timeline: "September 2002 - June 2010",
+//     course: "Elementary School",
+//     courseDescription: "",
+//     link: {pageLink: "https://www.makspecar.si/"}
+// };
+// const highSchool: AchievementDetails = {
+//     institutionTitle: "Gimnasium Vič",
+//     timeline: "September 2010 - July 2014",
+//     course: "High School",
+//     courseDescription: "",
+//     link: {pageLink: "https://www.gimvic.org/international/"}
+// };
 var fri = {
     institutionTitle: "Computer Science and Engineering",
     timeline: "October 2015 - September 2018",
@@ -34,8 +35,8 @@ var businessInformatics = {
     institutionTitle: "Business Informatics",
     timeline: "October 2019 - May 2022",
     course: "Faculty of Economics (University of Ljubljana)",
-    finishPiece: "Masters thesis",
-    courseDescription: "The Business Informatics programme is intended for all those who are interested in the use of information technology in companies and other organisations and are aware that this, in addition to knowledge of technology, also requires business knowledge. The emphasis is on digitalisation, business analytics, and the improvement of business processes and business models through the development of information systems.",
+    finishPiece: "Masters thesis: An analysis of the information system development method at a selected company",
+    courseDescription: "I analysed the current Scrum workflow inside a company I worked at. I found the parts of the process that were not optimized and perscribed a proper solution for each of them. The proposed solutions were then also implemented in the teams work.",
     link: { pageLink: "http://www.ef.uni-lj.si/graduate/busifno" }
 };
 var beenius = {
@@ -55,10 +56,10 @@ var result = {
     institutionTitle: "Result d.o.o.",
     timeline: "November 2018 - Present",
     course: "Software Engineer",
-    courseDescription: "I am developing custom software solutions for internal projects using Java frameworks. We are creating and maintaining microservices inside a big platform.",
+    courseDescription: "I am developing custom software solutions for internal projects using Java Spring Boot framework. We are creating and maintaining microservices on the AWS platform.",
     link: { pageLink: "https://www.result.eu/" }
 };
-var fullEducation = [elementarySchool, highSchool, fri, businessInformatics];
+var fullEducation = [fri, businessInformatics];
 var careers = [beenius, result];
 function Education() {
     return (<react_scroll_section_1.Section id={'experience'}>

@@ -4,6 +4,14 @@ import ProfilePicture from '../../images/updatedProfilePhoto.jpg';
 import {Section} from "react-scroll-section";
 
 function Profile() {
+    function calculateAge() {
+        var today = new Date();
+        var birthDate = new Date('1995-03-04');
+
+        let ageInMilliseconds = today - birthDate;
+        return Math.floor(ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
+    }
+
     return (
         <Section id={'profile'}>
             <div className={'container--profile'}>
@@ -27,7 +35,7 @@ function Profile() {
                         <p><strong>Name:</strong></p>
                         <p>Vid Rotar</p>
                         <p><strong>Age:</strong></p>
-                        <p>28 years</p>
+                        <p>{calculateAge()} years</p>
                         <p><strong>Location:</strong></p>
                         <p>Slovenia</p>
                     </Grid>
