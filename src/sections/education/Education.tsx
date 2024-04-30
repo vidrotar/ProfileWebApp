@@ -79,7 +79,7 @@ const result: AchievementDetails = {
 };
 
 const fullEducation: AchievementDetails[] = [fri, businessInformatics];
-const careers: AchievementDetails[] = [beenius, result];
+const careers: AchievementDetails[] = [result, beenius];
 
 
 function Education() {

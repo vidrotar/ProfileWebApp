@@ -60,7 +60,7 @@ var result = {
     link: { pageLink: "https://www.result.eu/" }
 };
 var fullEducation = [fri, businessInformatics];
-var careers = [beenius, result];
+var careers = [result, beenius];
 function Education() {
     return (<react_scroll_section_1.Section id={'experience'}>
             <div className={'container--grey'}>
