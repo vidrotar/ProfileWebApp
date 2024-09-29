@@ -4,7 +4,7 @@ var core_1 = require("@material-ui/core");
 var AbilityRow_tsx_1 = require("../abilityRow/AbilityRow.tsx");
 var springBoot = {
     skillName: "SpringBoot",
-    yearsOfExperience: 3
+    yearsOfExperience: 4
 };
 var symfony = {
     skillName: "Symfony",
@@ -12,11 +12,15 @@ var symfony = {
 };
 var docker = {
     skillName: "Docker",
-    yearsOfExperience: 2
+    yearsOfExperience: 4
 };
 var kubernetes = {
     skillName: "Kubernetes",
-    yearsOfExperience: 2
+    yearsOfExperience: 3
+};
+var kafka = {
+    skillName: "Kafka",
+    yearsOfExperience: 3
 };
 var kibana = {
     skillName: "Kibana",
@@ -32,7 +36,7 @@ var grafana = {
 };
 var java = {
     skillName: "Java",
-    yearsOfExperience: 4
+    yearsOfExperience: 5
 };
 var javascript = {
     skillName: "Javascript",
@@ -69,18 +73,18 @@ var agile = {
 };
 var scrum = {
     skillName: "Scrum",
-    yearsOfExperience: 4
+    yearsOfExperience: 5
 };
 var continuousIntegration = {
     skillName: "Continuous Integration",
-    yearsOfExperience: 3
+    yearsOfExperience: 4
 };
 var versionControl = {
     skillName: "Version Control",
     yearsOfExperience: 3
 };
 var languageSkills = [java, php, javascript, htmlCss, python];
-var backendSkills = [springBoot, docker, kubernetes, kibana, grafana, prometheus, symfony];
+var backendSkills = [springBoot, docker, kubernetes, kafka, kibana, grafana, prometheus, symfony];
 var frontendSkills = [react, typescript, jquery];
 var developingKnowledge = [agile, scrum, continuousIntegration, versionControl];
 function Skills() {

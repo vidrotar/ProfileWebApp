@@ -4,7 +4,7 @@ import {AbilityRowInfo} from '../Experience';
 
 const springBoot: AbilityRowInfo = {
     skillName: "SpringBoot",
-    yearsOfExperience: 3
+    yearsOfExperience: 4
 }
 
 const symfony: AbilityRowInfo = {
@@ -14,17 +14,17 @@ const symfony: AbilityRowInfo = {
 
 const docker: AbilityRowInfo = {
     skillName: "Docker",
-    yearsOfExperience: 2
+    yearsOfExperience: 4
 }
 
 const kubernetes: AbilityRowInfo = {
     skillName: "Kubernetes",
-    yearsOfExperience: 2
+    yearsOfExperience: 3
 }
 
 const kafka: AbilityRowInfo = {
     skillName: "Kafka",
-    yearsOfExperience: 2
+    yearsOfExperience: 3
 }
 
 const kibana: AbilityRowInfo = {
@@ -44,7 +44,7 @@ const grafana: AbilityRowInfo = {
 
 const java: AbilityRowInfo = {
     skillName: "Java",
-    yearsOfExperience: 4
+    yearsOfExperience: 5
 }
 
 const javascript: AbilityRowInfo = {
@@ -90,12 +90,12 @@ const agile: AbilityRowInfo = {
 
 const scrum: AbilityRowInfo = {
     skillName: "Scrum",
-    yearsOfExperience: 4
+    yearsOfExperience: 5
 }
 
 const continuousIntegration: AbilityRowInfo = {
     skillName: "Continuous Integration",
-    yearsOfExperience: 3
+    yearsOfExperience: 4
 }
 
 const versionControl: AbilityRowInfo = {

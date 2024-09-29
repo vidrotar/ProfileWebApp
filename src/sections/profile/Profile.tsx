@@ -23,7 +23,7 @@ function Profile() {
 
                     <Grid md={4} item className={'heading--2'}>
                         <h3>About me</h3>
-                        <p>I am an fullstack developer. I love structure, order and I also stand for quality. I also like working in a team.</p>
+                        <p>I am a fullstack developer. I love structure, order and I also stand for quality. I also like working in a team.</p>
                     </Grid>
 
                     <Grid md={4} xs={12} item>
