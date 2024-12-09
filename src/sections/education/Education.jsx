@@ -54,13 +54,20 @@ var beenius = {
 };
 var result = {
     institutionTitle: "Result d.o.o.",
-    timeline: "November 2018 - Present",
+    timeline: "November 2018 - August 2024",
     course: "Software Engineer",
     courseDescription: "I am developing custom software solutions for internal projects using Java Spring Boot framework. We are creating and maintaining microservices on the AWS platform.",
-    link: { pageLink: "https://www.result.eu/" }
+    link: { pageLink: "https://www.result.eu" }
+};
+var pronetGaming = {
+    institutionTitle: "Pronet Gaming",
+    timeline: "September 2024 - Present",
+    course: "Software Engineer",
+    courseDescription: "I am developing and maintaining a betting platform. It's a monolithic application, written mainly in Java EE and uses an Oracle database.",
+    link: { pageLink: "https://pronetgaming.com" }
 };
 var fullEducation = [fri, businessInformatics];
-var careers = [result, beenius];
+var careers = [pronetGaming, result, beenius];
 function Education() {
     return (<react_scroll_section_1.Section id={'experience'}>
             <div className={'container--grey'}>

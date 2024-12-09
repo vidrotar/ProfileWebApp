@@ -72,14 +72,22 @@ const beenius: AchievementDetails = {
 
 const result: AchievementDetails = {
     institutionTitle: "Result d.o.o.",
-    timeline: "November 2018 - Present",
+    timeline: "November 2018 - August 2024",
     course: "Software Engineer",
     courseDescription: "I am developing custom software solutions for internal projects using Java Spring Boot framework. We are creating and maintaining microservices on the AWS platform.",
-    link: {pageLink: "https://www.result.eu/"}
+    link: {pageLink: "https://www.result.eu"}
+};
+
+const pronetGaming: AchievementDetails = {
+    institutionTitle: "Pronet Gaming",
+    timeline: "September 2024 - Present",
+    course: "Software Engineer",
+    courseDescription: "I am developing and maintaining a betting platform. It's a monolithic application, written mainly in Java EE and uses an Oracle database.",
+    link: {pageLink: "https://pronetgaming.com"}
 };
 
 const fullEducation: AchievementDetails[] = [fri, businessInformatics];
-const careers: AchievementDetails[] = [result, beenius];
+const careers: AchievementDetails[] = [pronetGaming, result, beenius];
 
 
 function Education() {
