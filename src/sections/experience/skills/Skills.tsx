@@ -1,6 +1,6 @@
-import {Grid} from "@material-ui/core";
+import { Grid } from "@mui/material";
 import AbilityRow from '../abilityRow/AbilityRow.tsx';
-import {AbilityRowInfo} from '../Experience';
+import { AbilityRowInfo } from '../Experience';
 
 const springBoot: AbilityRowInfo = {
     skillName: "SpringBoot",
@@ -109,55 +109,55 @@ const frontendSkills: AbilityRowInfo[] = [react, typescript, jquery];
 const developingKnowledge: AbilityRowInfo[] = [agile, scrum, continuousIntegration, versionControl];
 
 function Skills() {
-    return(
+    return (
         <>
-                <Grid md={12} xs={12} item className={"heading--2"}>
-                    <h3>Skills</h3>
+            <Grid md={12} xs={12} item className={"heading--2"}>
+                <h3>Skills</h3>
+            </Grid>
+            <Grid md={6} xs={12} className={"skills--column"} item>
+                <Grid container className={"first--row"}>
+                    <Grid item>Language</Grid>
+                    <Grid item>Experience (Years)</Grid>
                 </Grid>
-                <Grid md={6} xs={12} className={"skills--column"} item>
-                    <Grid container className={"first--row"}>
-                        <Grid item>Language</Grid>
-                        <Grid item>Experience (Years)</Grid>
-                    </Grid>
-                    {
-                        languageSkills.map((skill, index) => {
-                            return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
-                        })
-                    }
+                {
+                    languageSkills.map((skill, index) => {
+                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
+                    })
+                }
+            </Grid>
+            <Grid md={6} xs={12} item>
+                <Grid container className={"first--row"}>
+                    <Grid item>Backend</Grid>
+                    <Grid item>Experience (Years)</Grid>
                 </Grid>
-                <Grid md={6} xs={12} item>
-                    <Grid container className={"first--row"}>
-                        <Grid item>Backend</Grid>
-                        <Grid item>Experience (Years)</Grid>
-                    </Grid>
-                    {
-                        backendSkills.map((skill, index) => {
-                            return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
-                        })
-                    }
+                {
+                    backendSkills.map((skill, index) => {
+                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
+                    })
+                }
+            </Grid>
+            <Grid md={6} xs={12} className={"skills--column"} item>
+                <Grid container className={"first--row"}>
+                    <Grid item>Frontend</Grid>
+                    <Grid item>Experience (Years)</Grid>
                 </Grid>
-                <Grid md={6} xs={12} className={"skills--column"} item>
-                    <Grid container className={"first--row"}>
-                        <Grid item>Frontend</Grid>
-                        <Grid item>Experience (Years)</Grid>
-                    </Grid>
-                    {
-                        frontendSkills.map((skill, index) => {
-                            return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
-                        })
-                    }
+                {
+                    frontendSkills.map((skill, index) => {
+                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
+                    })
+                }
+            </Grid>
+            <Grid md={6} xs={12} item>
+                <Grid container className={"first--row"}>
+                    <Grid item>Developing knowledge</Grid>
+                    <Grid item>Experience (Years)</Grid>
                 </Grid>
-                <Grid md={6} xs={12} item>
-                    <Grid container className={"first--row"}>
-                        <Grid item>Developing knowledge</Grid>
-                        <Grid item>Experience (Years)</Grid>
-                    </Grid>
-                    {
-                        developingKnowledge.map((skill, index) => {
-                            return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
-                        })
-                    }
-                </Grid>
+                {
+                    developingKnowledge.map((skill, index) => {
+                        return <AbilityRow skillName={skill.skillName} yearsOfExperience={skill.yearsOfExperience} key={index}></AbilityRow>
+                    })
+                }
+            </Grid>
 
         </>
     );
